@@ -139,3 +139,13 @@ for (const vmMemoria in gato2){
 //*  Object.values() : devuelve un array con los valores correspondientes a las propiedades enumerables de un objeto.
 
 console.log(Object.values(gato2));
+Object.values(gato2).forEach((item) => console.log(item));
+
+//*  Destructuring Objects / usar alias para no chocar con variables constante que se repiten
+//* formula >  const {} = objeto
+
+const {nombre2, duerme2, edad2, enemigos2} = gato2
+console.log(nombre2, duerme2, edad2, enemigos2)
+
+const {nombre2: aliasNombre2} = gato2;
+console.log(aliasNombre2);
